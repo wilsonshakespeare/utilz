@@ -1,12 +1,9 @@
 /**
  * This will return true if object is empty, string is empty, number is 0 or array is empty
  * In lodash _.isEmpty(1); returns true, unable to test number
- *
- * @param  {Record<string} value
- * @param  {} unknown>|string|number|unknown[]
+ * @param  {Record<string,unknown>|string|number|unknown[]} value
  * @returns boolean
  */
-
 function isEmptyOrZero(
   value: Record<string, unknown> | string | number | unknown[],
 ): boolean {

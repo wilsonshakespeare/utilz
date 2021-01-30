@@ -1,4 +1,4 @@
-# JS Library (utilz)
+# JS Library (utilzed)
 
 Despite lodash and many functionalities out there, there are still some utilities didn't achive what I intend to have.
 

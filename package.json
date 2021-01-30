@@ -31,16 +31,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "utilz",
+  "name": "utilzed",
   "author": "Wilson Lim",
-  "module": "dist/utilz.esm.js",
+  "module": "dist/utilzed.esm.js",
   "size-limit": [
     {
-      "path": "dist/utilz.cjs.production.min.js",
+      "path": "dist/utilzed.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/utilz.esm.js",
+      "path": "dist/utilzed.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -63,10 +63,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wilsonshakespeare/utilz.git"
+    "url": "git+https://github.com/wilsonshakespeare/utilzed.git"
   },
   "bugs": {
-    "url": "https://github.com/wilsonshakespeare/utilz/issues"
+    "url": "https://github.com/wilsonshakespeare/utilzed/issues"
   },
   "dependencies": {
     "undefined": " "
