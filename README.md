@@ -26,14 +26,14 @@ This library has jsdoc generated comment.
 In case you might be polling for a condition before proceed:
 
 ```ts
-import utilized from 'utilzed'
+import utilzed from 'utilzed'
 // import waitForTrue from 'utilzed/dist/promise/waitForTrue'
 
 const checkCondition = async () => (await somePollCheckFunction());
 
 // this will waitForTrue checkCondition to be true
 // checkCondition will be called every 100ms
-const success = await utilized.waitForTrue(100, checkCondition, 1000);
+const success = await utilzed.waitForTrue(100, checkCondition, 1000);
 
 if (success) {
   // Meaning checkCondition function returns true before 1000 ms
@@ -49,9 +49,9 @@ if (success) {
 `await sleep(100)` will await for 100ms before proceed to next function
 
 ```ts
-import utilized from 'utilzed'
+import utilzed from 'utilzed'
 
-await utilized.sleep(100);
+await utilzed.sleep(100);
 
 // will proceed after sleep for 100 ms
 ```
@@ -63,11 +63,11 @@ await utilized.sleep(100);
 This will return true if object is empty, string is empty, number is 0 or array is empty
 
 ```ts
-import utilized from 'utilzed'
+import utilzed from 'utilzed'
 
 // if lodash isEmpty the following will return true
-utilized.isEmptyOrZero(100); // returns false
-utilized.isEmptyOrZero(0); // returns true
+utilzed.isEmptyOrZero(100); // returns false
+utilzed.isEmptyOrZero(0); // returns true
 
 ```
 
@@ -78,10 +78,10 @@ utilized.isEmptyOrZero(0); // returns true
 Convert time value without mathematical headache
 
 ```ts
-import utilized from 'utilzed'
+import utilzed from 'utilzed'
 
 // Can use destructured assignment
-const { TimeConverter } = utilized;
+const { TimeConverter } = utilzed;
 
 // returns 123000 (target in ms) from 123 (seconds)
 TimeConverter.target(Format.MILISECONDS).from(Format.SECONDS, 123);
