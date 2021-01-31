@@ -1,12 +1,12 @@
-import waitFor from '../../src/promise/waitFor';
+import waitForTrue from '../../src/promise/waitForTrue';
 
-describe('waitFor functionality', () => {
+describe('waitForTrue functionality', () => {
   // These are the following behaviour to override from lodash
   it('should able to proceed if the condition is true and before timeout', async () => {
     const checkCondition = async () => true;
 
     const prev = new Date().getTime();
-    await waitFor(500, checkCondition, 1000);
+    await waitForTrue(500, checkCondition, 1000);
     const now = new Date().getTime();
     const lessThan1000 = now - prev < 1000;
     expect(lessThan1000).toEqual(true);
@@ -17,7 +17,7 @@ describe('waitFor functionality', () => {
 
     // expect to proceed on timeout
     const prev = new Date().getTime();
-    await waitFor(500, checkCondition, 1000);
+    await waitForTrue(500, checkCondition, 1000);
     const now = new Date().getTime();
     const moreThan1000 = now - prev >= 1000;
 
