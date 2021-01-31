@@ -2,6 +2,19 @@
 
 Despite lodash and many functionalities out there, there are still some utilities didn't achive what I intend to have.
 
+## Install:
+
+```shell
+npm install utilzed
+```
+
+### Upgrade:
+
+```shell
+# set specific version
+npm install utilzed@0.1.3
+```
+
 ## Library Functions:
 
 This library has jsdoc generated comment.
