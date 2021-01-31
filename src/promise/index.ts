@@ -1,7 +1,7 @@
-import waitFor from './waitFor';
+import waitForTrue from './waitForTrue';
 import sleep from './sleep';
 
 export default {
-  waitFor,
+  waitForTrue,
   sleep,
 };
