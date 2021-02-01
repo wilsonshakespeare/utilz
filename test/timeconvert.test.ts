@@ -1,4 +1,6 @@
-import TimeConverter, { Format } from '../src/timeconvert';
+import utilzed from '../src';
+
+const { TimeConverter, Format } = utilzed.timeconvert;
 
 describe('milisecs', () => {
   it('should get milisecs: from', () => {

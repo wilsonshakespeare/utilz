@@ -81,7 +81,8 @@ Convert time value without mathematical headache
 import utilzed from 'utilzed'
 
 // Can use destructured assignment
-const { TimeConverter } = utilzed;
+const { TimeConverter, Format } = utilzed.timeconvert;
+// type Format if using flow
 
 // returns 123000 (target in ms) from 123 (seconds)
 TimeConverter.target(Format.MILISECONDS).from(Format.SECONDS, 123);

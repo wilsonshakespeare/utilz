@@ -1,4 +1,6 @@
-import isEmptyOrZero from '../../src/validation/isEmptyOrZero';
+import utilzed from '../../src';
+
+const { isEmptyOrZero } = utilzed;
 
 describe('should be true if 0, empty string, empty array or object', () => {
   it('0 returns true', () => {

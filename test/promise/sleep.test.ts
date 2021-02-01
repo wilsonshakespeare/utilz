@@ -1,4 +1,6 @@
-import sleep from '../../src/promise/sleep';
+import utilzed from '../../src';
+
+const { sleep } = utilzed;
 
 describe('sleep functionality', () => {
   it('should able to proceed after sleep time', async () => {
