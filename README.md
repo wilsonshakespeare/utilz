@@ -71,6 +71,23 @@ utilzed.isEmptyOrZero(0); // returns true
 
 ```
 
+#### versionCheck
+
+This module checks if the versioning meets the condition
+
+```ts
+import utilzed from 'utilzed'
+
+const { OPERATORS, isVersionValid } = utilzed.versionCheck
+
+// this will return true
+isVersionValid('v2.1.1', OPERATORS.MORE_THAN_EQUAL, 'v1.1.1')
+
+// this will return false
+isVersionValid('v1.1.1', OPERATORS.LESS_THAN, 'v1.1.1')
+
+```
+
 ### Others
 
 #### TimeConverter
@@ -82,7 +99,6 @@ import utilzed from 'utilzed'
 
 // Can use destructured assignment
 const { TimeConverter, Format } = utilzed.timeconvert;
-// type Format if using flow
 
 // returns 123000 (target in ms) from 123 (seconds)
 TimeConverter.target(Format.MILISECONDS).from(Format.SECONDS, 123);
