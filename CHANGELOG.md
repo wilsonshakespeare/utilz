@@ -9,6 +9,9 @@ https://seesparkbox.com/foundry/semantic_commit_messages
 
 ## [Unreleased]
 
+## [0.2.1] - 2021-2-1
+### Added:
+- feat: Added `versionCheck` functionality
 ## [0.2.0] - 2021-2-1
 ### Changed:
 - chore: test files using `src/index` to ensure library usability
