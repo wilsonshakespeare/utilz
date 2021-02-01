@@ -1,4 +1,6 @@
-import waitForTrue from '../../src/promise/waitForTrue';
+import utilzed from '../../src';
+
+const { waitForTrue } = utilzed;
 
 describe('waitForTrue functionality', () => {
   // These are the following behaviour to override from lodash

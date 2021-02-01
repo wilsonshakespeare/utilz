@@ -1,9 +1,12 @@
 import validation from './validation';
 import promise from './promise';
-import TimeConverter from './timeconvert';
+import TimeConverter, { Format } from './timeconvert';
 
 export default {
   ...validation,
   ...promise,
-  TimeConverter,
+  timeconvert: {
+    TimeConverter,
+    Format,
+  },
 };

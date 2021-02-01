@@ -9,6 +9,20 @@ https://seesparkbox.com/foundry/semantic_commit_messages
 
 ## [Unreleased]
 
+## [0.2.0] - 2021-2-1
+### Changed:
+- chore: test files using `src/index` to ensure library usability
+
+### Fix:
+- fix: Add missing `/timeconvert` `Format` enum into index using `timeconvert` property
+
+### Removed:
+- chore: remove `TimeConvert` property from index
+
+## [0.1.4] - 2021-2-1
+### Changed:
+- docs: Update README.md from utilized to utilzed
+- docs: Update README.md for install instruction
 ## [0.1.3] - 2021-2-1
 ### Added:
 - docs: Add functions documentation
