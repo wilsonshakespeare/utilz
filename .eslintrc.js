@@ -5,7 +5,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.lint.json'],
   },
-  ignorePatterns: ['.eslintrc.js', 'scripts/*'],
+  ignorePatterns: ['.eslintrc.js', 'scripts/*', 'tsdx.config.js'],
   rules: {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'import/no-mutable-exports': 0,

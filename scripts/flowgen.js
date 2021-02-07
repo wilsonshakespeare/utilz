@@ -2,6 +2,8 @@ const distFolder = './dist';
 const fs = require('fs');
 const { beautify, compiler } = require('flowgen');
 
+console.log('generating flow files');
+
 function getAllFilePaths(dirPath, filePaths = []) {
   const files = fs.readdirSync(dirPath);
 
