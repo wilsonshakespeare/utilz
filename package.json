@@ -42,6 +42,30 @@
     {
       "path": "dist/index.esm.js",
       "limit": "10 KB"
+    },
+    {
+      "path": "dist/promise.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/promise.esm.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/timeconvert.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/timeconvert.esm.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/validation.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/validation.esm.js",
+      "limit": "10 KB"
     }
   ],
   "devDependencies": {
