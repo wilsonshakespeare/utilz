@@ -9,6 +9,17 @@ https://seesparkbox.com/foundry/semantic_commit_messages
 
 ## [Unreleased]
 
+## [0.2.3] - 2021-2-1
+### Added:
+- chore: Separate build modules instead of index.js
+
+Hence the following is possible:
+```javascript
+// to import promise module
+import promise from 'utilzed/dist/promise'
+
+// the caveat will be having the need to use dist/
+```
 ## [0.2.2] - 2021-2-1
 ### Fixed:
 - fix: Fix `package.json` dependencies
