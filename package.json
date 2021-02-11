@@ -12,11 +12,11 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build && node ./scripts/flowgen.js",
+    "build": "bash ./build.sh",
     "test": "tsdx test",
     "lint": "eslint ./src ./test --ext .js,.ts",
     "lint-fix": "eslint ./src ./test --ext .js,.ts --fix",
-    "prepare": "tsdx build && node ./scripts/flowgen.js",
+    "prepare": "bash ./build.sh",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
@@ -33,14 +33,38 @@
   },
   "name": "utilzed",
   "author": "Wilson Lim",
-  "module": "dist/utilzed.esm.js",
+  "module": "dist/index.esm.js",
   "size-limit": [
     {
-      "path": "dist/utilzed.cjs.production.min.js",
+      "path": "dist/index.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/utilzed.esm.js",
+      "path": "dist/index.esm.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/promise.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/promise.esm.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/timeconvert.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/timeconvert.esm.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/validation.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/validation.esm.js",
       "limit": "10 KB"
     }
   ],

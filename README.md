@@ -12,7 +12,16 @@ npm install utilzed
 
 ```shell
 # set specific version
-npm install utilzed@0.1.3
+npm install utilzed@0.2.3
+```
+
+### Important for pure ES6
+
+```javascript
+// If uses require function you will need to use .default
+// For import in typescript or flow, this is not required
+
+const utilzed = require('utilzed').default;
 ```
 
 ## Library Functions:
