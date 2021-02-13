@@ -1,7 +1,6 @@
 {
-  "tslint.configFile": "./tslint.json",
   "importBeautify.semicolon": true,
-  "importBeautify.maxLineLength": 100,
+  "importBeautify.maxLineLength": 80,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "javascript.format.enable": false,
   "editor.tabSize": 2,
