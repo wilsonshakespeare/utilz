@@ -15,13 +15,34 @@ npm install utilzed
 npm install utilzed@0.2.3
 ```
 
-### Important for pure ES6
+## Usage
+
+This library has both flow and ts declarations
+
+### For compiled library:
+
+```javascript
+import utilzed from 'utilzed';
+
+// for promise module and functions
+const { waitForTrue, sleep } = utilzed.promise;
+
+// for timeconvert module
+const { TimeConverter, Format } = utilzed.timeconvert;
+
+// If index module getting too big for the size you can import specific module
+import timeconvert from 'utilzed/dist/timeconvert';
+
+```
+### Important for pure ES6 (require)
 
 ```javascript
 // If uses require function you will need to use .default
 // For import in typescript or flow, this is not required
 
 const utilzed = require('utilzed').default;
+const timeconvert = require('utilzed/dist/timeconvert').default;
+
 ```
 
 ## Library Functions:
@@ -116,6 +137,23 @@ TimeConverter.target(Format.MILISECONDS).from(Format.SECONDS, 123);
 
 **TODO: host it on github pages**
 
-## Generating library template
+# This Library is Generated From create-tslibs
 
-This library template will soon be generated from npx command.
+Can refer to [create-tslibs](https://www.npmjs.com/package/create-tslibs)
+
+## To run development following will be recommended:
+
+Use [VS Code](https://code.visualstudio.com/download) as IDE:
+
+The library template is already setup with vscode settings for auto format.
+
+Ensure the following plugins are enabled:
+- [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) (This is setup with airbnb linting convention)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Add JSDoc Comment](https://marketplace.visualstudio.com/items?itemName=stevencl.addDocComments#)
+
+Optional but Recommended:
+- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+- [Indenticator](https://marketplace.visualstudio.com/items?itemName=sirtori.indenticator)
+- [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=coenraads.bracket-pair-colorizer)
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)

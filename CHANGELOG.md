@@ -7,7 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 And for each point, add semantics:
 https://seesparkbox.com/foundry/semantic_commit_messages
 
+For each keypoint, treat like commit messages, follow [Chris Beams' rules](https://chris.beams.io/posts/git-commit/)
+
 ## [Unreleased]
+
+## [0.2.4] - 2021-2-13
+### Added:
+- chore: Update prettier and .vscode/setting.json for standard format
+- chore: Update README.md for create-tslibs reference
 
 ## [0.2.3] - 2021-2-1
 ### Added:
