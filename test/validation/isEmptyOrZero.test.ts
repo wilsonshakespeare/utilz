@@ -22,4 +22,8 @@ describe('should be true if 0, empty string, empty array or object', () => {
     expect(isEmptyOrZero([])).toEqual(true);
     expect(isEmptyOrZero([1, 2, 3])).toEqual(false);
   });
+
+  it('NaN return true', () => {
+    expect(isEmptyOrZero(Number('AB'))).toEqual(true);
+  });
 });
