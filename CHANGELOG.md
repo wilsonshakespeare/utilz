@@ -11,6 +11,9 @@ For each keypoint, treat like commit messages, follow [Chris Beams' rules](https
 
 ## [Unreleased]
 
+## [0.2.5] - 2021-3-26
+### Fixed:
+- fix: isEmptyOrZero to able to have isNaN check
 ## [0.2.4] - 2021-2-13
 ### Added:
 - chore: Update prettier and .vscode/setting.json for standard format

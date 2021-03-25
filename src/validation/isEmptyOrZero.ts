@@ -16,7 +16,7 @@ function isEmptyOrZero(
   }
 
   if (typeof value === 'number') {
-    return value === 0;
+    return value === 0 || Number.isNaN(value);
   }
 
   if (Array.isArray(value)) {
